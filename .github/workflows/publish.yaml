@@ -12,19 +12,20 @@ permissions:
 jobs:
   publish:
     runs-on: ubuntu-latest
-
     steps:
       - uses: actions/checkout@v6
 
       - uses: actions/setup-node@v6
         with:
-          node-version: 24
-          registry-url: https://registry.npmjs.org
+          node-version: '24'
+          registry-url: 'https://registry.npmjs.org'
+          package-manager-cache: false
 
       - run: corepack enable
       - run: yarn install --immutable
 
+      - name: Update npm CLI
+        run: npm install --global npm@latest
+
       - name: Publish HyroX to npm
-        run: npm publish --provenance --tag latest
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+        run: npm publish --tag latest
