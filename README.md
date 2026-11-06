@@ -1,9 +1,9 @@
-# 🌱 hyrox
+# hyrox
 
-[![Logo](https://files.catbox.moe/c5s9g0.jpg)](https://www.npmjs.com/package/hyrox)
+[![Logo](https://raw.githubusercontent.com/Hyro03/logo-ai/main/baileys.jpg)](https://www.npmjs.com/package/hyrox)
 
 <p align="center">
-   A lightweight, dependency-minimal Baileys v7 fork with newsletter media upload fixes, interactive messages, albums, and extended message type support.
+   HyroX merupakan fork Baileys v7 dengan dependencies yang tetap ringan. Project ini membawa perbaikan newsletter media upload, interactive messages, album support, serta dukungan untuk berbagai message type tambahan.
    <br><br>
    <a href="https://www.npmjs.com/package/hyrox">
       <img src="https://img.shields.io/npm/v/hyrox?style=for-the-badge&logo=npm"/>
@@ -30,117 +30,62 @@
 
 ☕ For donation: [Saweria](https://saweria.co/hyro)
 
-### 📋 Table of Contents
-- [📋 Table of Contents](#-table-of-contents)
-- [✨ Highlights](#-highlights)
-- [🛠️ Internal Adjustments](#%EF%B8%8F-internal-adjustments)
-- [📨 Messages Handling & Compatibility](#-highlights)
-- [🧩 Additional Message Options](#-additional-message-options)
-- [📥 Installation](#-installation)
-   - [🧩 Import (ESM & CJS)](#-import-esm--cjs)
-- [🌐 Connect to WhatsApp (Quick Step)](#-connect-to-whatsapp-quick-step)
-   - [🔐 Auth State](#-auth-state)
-- [🗄️ Implementing Data Store](#%EF%B8%8F-implementing-data-store)
-- [🪪 WhatsApp IDs Explain](#-whatsapp-ids-explain)
-- [✉️ Sending Messages](#%EF%B8%8F-sending-messages)
-   - [🔠 Text](#-text)
-   - [🔔 Mention](#-mention)
-   - [😁 Reaction](#-reaction)
-   - [📌 Pin Message](#-pin-message)
-   - [🔖 Keep Chat](#-keep-chat)
-   - [➡️ Forward Message](#%EF%B8%8F-forward-message)
-   - [👤 Contact](#-contact)
-   - [📍 Location](#-location)
-   - [🗓️ Event](#%EF%B8%8F-event)
-   - [👥 Group Invite](#-group-invite)
-   - [🛍️ Product](#%EF%B8%8F-product)
-   - [📊 Poll](#-poll)
-   - [💭 Button Response](#-button-response)
-   - [✨ Rich Response](#-rich-response)
-   - [🧾 Message with Code Block](#-message-with-code-block)
-   - [🌏 Message with Inline Entities](#-message-with-inline-entities)
-   - [📋 Message with Table](#-message-with-table)
-   - [🎞️ Status Mention](#%EF%B8%8F-status-mention)
-- [📁 Sending Media Messages](#-sending-media-messages)
-   - [🖼️ Image](#%EF%B8%8F-image)
-   - [🎥 Video](#-video)
-   - [📃 Sticker](#-sticker)
-   - [💽 Audio](#-audio)
-   - [🗂️ Document](#%EF%B8%8F-document)
-   - [🖼️ Album (Image & Video)](#%EF%B8%8F-album-image--video)
-   - [📦 Sticker Pack](#-sticker-pack)
-- [👉🏻 Sending Interactive Messages](#-sending-interactive-messages)
-   - [🔘 Buttons](#-buttons)
-   - [📋 List](#-list)
-   - [🗄️ Interactive](#%EF%B8%8F-interactive)
-   - [🫙 Hydrated Template](#-hydrated-template)
-- [💳 Sending Payment Messages](#-sending-payment-messages)
-   - [➕ Invite Payment](#-invite-payment)
-   - [🧾 Invoice](#-invoice)
-   - [🛍️ Order](#%EF%B8%8F-order)
-   - [💳 Request Payment](#-request-payment)
-- [👁️ Other Message Options](#%EF%B8%8F-other-message-options)
-   - [🤖 AI Icon](#-ai-icon)
-   - [🕒 Ephemeral](#-ephemeral)
-   - [📰 External Ad Reply](#-external-ad-reply)
-   - [🧑‍🧑‍🧒 Group Status](#%E2%80%8D%E2%80%8D-group-status)
-   - [🐱 Lottie Sticker](#-lottie-sticker)
-   - [🧩 Raw](#-raw)
-   - [🏷️ Secure Meta Service Label](#%EF%B8%8F-secure-meta-service-label)
-   - [📑 Spoiler](#-spoiler)
-   - [👁️ View Once](#%EF%B8%8F-view-once)
-   - [👁️ View Once V2](#%EF%B8%8F-view-once-v2)
-   - [👁️ View Once V2 Extension](#%EF%B8%8F-view-once-v2-extension)
-- [♻️ Modify Messages](#%EF%B8%8F-modify-messages)
-   - [🗑️ Delete Messages](#%EF%B8%8F-delete-messages)
-   - [✏️ Edit Messages](#%EF%B8%8F-edit-messages)
-- [🧰 Additional Contents](#-additional-contents)
-   - [🏷️ Find User ID (JID|PN/LID)](#%EF%B8%8F-find-user-id-jidpnlid)
-   - [🔑 Request Custom Pairing Code](#-request-custom-pairing-code)
-   - [🖼️ Image Processing](#%EF%B8%8F-image-processing)
-   - [📣 Newsletter Management](#-newsletter-management)
-   - [👥 Group Management](#-group-management)
-   - [👥 Community Management](#-community-management)
-   - [👤 Profile Management](#-profile-management)
-   - [🛒 Business Management](#-business-management)
-   - [🔐 Privacy Management](#-privacy-management)
-   - [📡 Events](#-events)
-- [🚀 Try the Bot](#-try-the-bot)
-- [📦 Fork Base](#-fork-base)
-- [📣 Credits](#-credits)
+### 🧭 Daftar Isi
 
-### ✨ Highlights
+- [🧭 Daftar Isi](#-daftar-isi)
+- [🚀 Fitur Unggulan](#-fitur-unggulan)
+- [🔧 Perubahan Internal](#-perubahan-internal)
+- [💬 Dukungan dan Kompatibilitas Pesan](#-dukungan-dan-kompatibilitas-pesan)
+- [⚙️ Opsi Pesan Tambahan](#️-opsi-pesan-tambahan)
+- [📦 Instalasi](#-instalasi)
+  - [📥 Import (ESM & CJS)](#-import-esm--cjs)
+  - [🔌 Menghubungkan ke WhatsApp](#-menghubungkan-ke-whatsapp)
+  - [🔐 Authentication State](#-authentication-state)
+- [🗄️ Implementasi Data Store](#️-implementasi-data-store)
+- [🪪 Penjelasan WhatsApp ID](#-penjelasan-whatsapp-id)
+- [📤 Mengirim Pesan](#-mengirim-pesan)
+- [🖼️ Mengirim Media](#️-mengirim-media)
+- [🎛️ Interactive Messages](#️-interactive-messages)
+- [💳 Mengirim Pesan Pembayaran](#-mengirim-pesan-pembayaran)
+- [🧰 Opsi Pesan Lainnya](#-opsi-pesan-lainnya)
+- [🔄 Mengelola Pesan](#-mengelola-pesan)
+- [🧩 Fitur Tambahan](#-fitur-tambahan)
+- [🤖 Explore Bot](#-explore-bot)
+- [🌿 Project Foundation](#-project-foundation)
+- [🏅 Kredit dan Atribusi](#-kredit-dan-atribusi)
 
-This fork designed for production use with a focus on clarity and safety:
+### 🚀 Fitur Unggulan
 
-- 🚫 No obfuscation. Easy to read and audit.
-- 🚫 No auto-follow channel (newsletter) behavior.
+HyroX dirancang untuk production environment dengan mengutamakan code yang mudah dipahami, keamanan, dan workflow development yang lebih praktis.
+
+- Tanpa obfuscation, sehingga code lebih mudah dibaca dan diaudit.
+- Tidak ada perilaku auto-follow channel (newsletter).
 
 > [!IMPORTANT]
-> To be clear, I am **NOT** the original maintainer of Baileys. Full credit and respect belong to:
+> Sebagai informasi, HyroX bukan project original Baileys dan bukan dikelola oleh maintainer upstream. Full credit tetap diberikan kepada:
 >
 > https://github.com/WhiskeySockets/Baileys
 >
-> **Forking is completely acceptable. Removing attribution, contributor credits, or modification history is not.**
+> **Forking diperbolehkan, tetapi attribution, contributor credits, dan riwayat perubahan wajib tetap disertakan.**
 >
-> Thank you. 🤍
+> Terima kasih sudah menggunakan HyroX. 🤍
 
 > [!NOTE]
-> 📄 This project is maintained with limited scope and is not intended to replace upstream Baileys.
+> 📄 HyroX dikembangkan dengan scope tertentu dan tidak dimaksudkan untuk menggantikan Baileys upstream.
 >
-> 😞 And, really sorry for my bad english.
+>
 
-### 🛠️ Internal Adjustments
-- 🖼️ Fixed an issue where media could not be sent to newsletters due to an upstream issue.
-- 📁 Reintroduced [`makeInMemoryStore`](#%EF%B8%8F-implementing-data-store) with a minimal ESM adaptation and small adjustments for Baileys v7.
-- 📦 Switched FFmpeg execution from `exec` to `spawn` for safer process handling.
-- 🗃️ Added [`@napi-rs/image`](https://www.npmjs.com/package/@napi-rs/image) as a supported image processing backend in [`getImageProcessingLibrary()`](#%EF%B8%8F-image-processing), offering a balance between performance and compatibility.
-- ◻️ Reintroduced `printQRInTerminal` in `makeWASocket()`.
-- 📡 Migrated signal transport to a Rust-based WASM.
-- 🌱 Reduced transitive dependencies from 13 to just 2 with optional peer integrations.
+### 🔧 Perubahan Internal
+- Memperbaiki masalah pengiriman media ke newsletter yang berasal dari issue pada upstream.
+- Menghadirkan kembali [`makeInMemoryStore`](#️-implementasi-data-store) dengan penyesuaian ESM yang ringan agar kompatibel dengan Baileys v7.
+- Mengubah eksekusi FFmpeg dari `exec` menjadi `spawn` untuk process handling yang lebih aman.
+- Menambahkan [`@napi-rs/image`](https://www.npmjs.com/package/@napi-rs/image) sebagai backend image processing yang didukung melalui [`getImageProcessingLibrary()`](#%EF%B8%8F-image-processing), dengan mempertimbangkan performance dan compatibility.
+- ◻️ Mengaktifkan kembali opsi `printQRInTerminal` pada `makeWASocket()`.
+- Memindahkan signal transport ke implementasi berbasis Rust WASM.
+- Mengurangi transitive dependencies dari 13 menjadi 2, dengan dukungan optional peer integrations.
 
-### 📨 Messages Handling & Compatibility
-- 📩 Expanded messages support for:
+### 💬 Dukungan dan Kompatibilitas Pesan
+- Menambahkan dukungan untuk berbagai jenis message berikut:
    - 🖼️ [Album Message](#%EF%B8%8F-album-image--video)
    - 👤 [Group Status Message](#%E2%80%8D%E2%80%8D-group-status)
    - 👉🏻 [Interactive Message](#-sending-interactive-messages) (buttons, lists, native flows, templates, carousels).
@@ -151,37 +96,43 @@ This fork designed for production use with a focus on clarity and safety:
    - [🌏 Message with Inline Entities](#-message-with-inline-entities)
    - 📋 [Message with Table](#-message-with-table)
    - 💳 [Payment-related Message](#-sending-payment-messages) (payment requests, invites, orders, invoices).
-- 📰 Simplified sending messages with ad thumbnail using [`externalAdReply`](#-external-ad-reply), without requiring manual `contextInfo`.
-- 💭 Added support for quoting messages inside channel (newsletter).
-- 🎀 Added support for [custom button icon](#%EF%B8%8F-interactive).
+- Mempermudah pengiriman pesan dengan ad thumbnail melalui [`externalAdReply`](#-external-ad-reply), tanpa perlu mengatur `contextInfo` secara manual.
+- Menambahkan kemampuan untuk melakukan reply atau quote pada pesan di channel (newsletter).
+- Mendukung penggunaan [custom button icon](#%EF%B8%8F-interactive) pada interactive message.
 
-### 🧩 Additional Message Options
-- 👁️ Added optional boolean flags for message handling:  
-   - 🤖 [`ai`](#-ai-icon) - AI icon on message
-   - 📣 [`mentionAll`](#-mention) - Mention all group participants without requiring their JIDs in `mentions` or `mentionedJid`
-   - 🔧 [`ephemeral`](#-ephemeral), [`groupStatus`](#%E2%80%8D%E2%80%8D-group-status), [`isLottie`](#-lottie-sticker), [`spoiler`](#-spoiler), [`viewOnce`](#%EF%B8%8F-view-once), [`viewOnceV2`](#%EF%B8%8F-view-once-v2), [`viewOnceV2Extension`](#%EF%B8%8F-view-once-v2-extension), [`interactiveAsTemplate`](#%EF%B8%8F-interactive) - Message wrappers
-   - 🔒 [`secureMetaServiceLabel`](#%EF%B8%8F-secure-meta-service-label) - Secure meta service label on message
-   - 📄 [`raw`](#-raw) - Build your message manually **(DO NOT USE FOR EXPLOITATION)**
+### ⚙️ Opsi Pesan Tambahan
+- Menyediakan beberapa optional boolean flags untuk mengatur perilaku message:
+   - 🤖 [`ai`](#-ai-icon) - Menampilkan AI icon pada pesan
+   - 📣 [`mentionAll`](#-mention) - Mention seluruh peserta grup tanpa harus mencantumkan JID mereka di `mentions` atau `mentionedJid`
+   - 🔧 [`ephemeral`](#-ephemeral), [`groupStatus`](#%E2%80%8D%E2%80%8D-group-status), [`isLottie`](#-lottie-sticker), [`spoiler`](#-spoiler), [`viewOnce`](#%EF%B8%8F-view-once), [`viewOnceV2`](#%EF%B8%8F-view-once-v2), [`viewOnceV2Extension`](#%EF%B8%8F-view-once-v2-extension), [`interactiveAsTemplate`](#%EF%B8%8F-interactive) - Message wrappers (pembungkus pesan)
+   - 🔒 [`secureMetaServiceLabel`](#%EF%B8%8F-secure-meta-service-label) - Menampilkan secure meta service label pada pesan
+   - 📄 [`raw`](#-raw) - Buat pesan secara manual **(JANGAN DIGUNAKAN UNTUK EKSPLOITASI)**
 
-### 📥 Installation
+### 📦 Instalasi
 
-Choose one of the following methods to install `hyrox`.
+Pilih salah satu metode berikut untuk menginstal `hyrox`.
 
-- 📄 Via `package.json`
+- Melalui `package.json`
 
+**NPM**
 ```json
-# NPM
-"dependencies": {
-   "hyrox": "latest"
-}
-
-# GitHub
-"dependencies": {
-   "hyrox": "github:hyroo-x/Hyrox"
+{
+  "dependencies": {
+    "hyrox": "latest"
+  }
 }
 ```
 
-- ⌨️ Via terminal
+**GitHub**
+```json
+{
+  "dependencies": {
+    "hyrox": "github:hyroo-x/Hyrox"
+  }
+}
+```
+
+- ⌨️ Melalui terminal
 
 ```bash
 # NPM
@@ -191,17 +142,17 @@ npm i hyrox@latest
 npm i github:hyroo-x/Hyrox
 ```
 
-- 🔗 Peer Dependencies
+- Peer Dependencies (Dependensi Tambahan)
   - One of `@napi-rs/image@^1.12.0`, `jimp@^1.6.0`, or `sharp@>=0.33.0` is required for thumbnail generation and other image processing operations.
   - `better-sqlite3@>=11.0.0` is required for `useSqliteAuthState` when using Node.js versions below `22.13`.
   - `qr@>=0.5.0` is required for `printQRInTerminal`.
   - `ws@^8.13.0` is required when using Node.js versions below `22.0`.
 
-- ⚙️ System Dependencies
+- System Dependencies (Dependensi Sistem)
   - `ffmpeg` is required for video thumbnail extraction, audio waveform generation, and other media processing operations.
   - `ffprobe` is required for media metadata inspection (MediaInfo).
 
-#### 🧩 Import (ESM & CJS)
+#### 📥 Import (ESM & CJS)
 
 ```javascript
 // --- ESM
@@ -211,7 +162,7 @@ import { makeWASocket } from 'hyrox'
 const { makeWASocket } = require('hyrox')
 ```
 
-### 🌐 Connect to WhatsApp (Quick Step)
+### 🔌 Menghubungkan ke WhatsApp
 
 ```javascript
 import { makeWASocket, delay, DisconnectReason, useMultiFileAuthState } from 'hyrox'
@@ -221,7 +172,7 @@ const myPhoneNumber = '6288888888888'
 
 const connectToWhatsApp = async () => {
    const { state, saveCreds } = await useMultiFileAuthState('session')
-    
+
    const sock = makeWASocket({
       // Optional, "qr" must be installed
       printQRInTerminal: true,
@@ -265,7 +216,7 @@ const connectToWhatsApp = async () => {
 connectToWhatsApp()
 ```
 
-#### 🔐 Auth State
+#### 🔐 Authentication State
 
 ```javascript
 import {
@@ -275,19 +226,19 @@ import {
 } from 'hyrox'
 ```
 
-- 🗒️ `useMultiFileAuthState(folder?: string)`
-   Stores authentication credentials and keys in separate JSON files within a directory. Suitable for users who prefer the traditional multi-file storage approach.
+- `useMultiFileAuthState(folder?: string)`
+   Metode ini menyimpan authentication credentials dan keys dalam beberapa file JSON di satu folder, sehingga cocok untuk pengelolaan session dengan format multi-file.
 
-- 📄 `useSingleFileAuthState(fileName?: string)`
-   Stores all authentication credentials and keys in a single JSON file for simpler file management.
+- `useSingleFileAuthState(fileName?: string)`
+   Seluruh authentication credentials dan keys disimpan dalam satu file JSON agar session lebih mudah dikelola.
 
-- 🗄️ `useSqliteAuthState(dbPath?: string, ownedDatabase?: object)`
-   Stores authentication credentials and keys in an SQLite database. No external SQLite dependency is required when using Bun or Node.js `>=22.13`. For older Node.js versions, install `better-sqlite3`.
+- `useSqliteAuthState(dbPath?: string, ownedDatabase?: object)`
+   Menyimpan kredensial autentikasi dan keys dalam database SQLite. Tidak memerlukan dependency SQLite tambahan jika menggunakan Bun atau Node.js `>=22.13`. Untuk versi Node.js yang lebih lama, instal `better-sqlite3`.
 
-### 🗄️ Implementing Data Store
+### 🗄️ Implementasi Data Store
 
 > [!CAUTION]
-> I highly recommend building your own data store, as keeping an entire chat history in memory can lead to excessive RAM usage.
+> Sangat disarankan untuk membuat data store sendiri, karena menyimpan seluruh riwayat chat di memory dapat menyebabkan penggunaan RAM yang berlebihan.
 
 ```javascript
 import { makeWASocket, makeInMemoryStore, delay, DisconnectReason, useMultiFileAuthState } from 'hyrox'
@@ -299,7 +250,7 @@ const storePath = './store.json'
 
 const connectToWhatsApp = async () => {
    const { state, saveCreds } = await useMultiFileAuthState('session')
-    
+
    const sock = makeWASocket({
       auth: state
    })
@@ -351,22 +302,22 @@ const connectToWhatsApp = async () => {
 connectToWhatsApp()
 ```
 
-### 🪪 WhatsApp IDs Explain
+### 🪪 Penjelasan WhatsApp ID
 
-`id` is the WhatsApp ID, called `jid` and `lid` too, of the person or group you're sending the message to.
-- It must be in the format `[country code][phone number]@s.whatsapp.net`
-   - Example for people: `19999999999@s.whatsapp.net` and `12699999999@lid`.
-   - For groups, it must be in the format `123456789-123345@g.us`.
+`id` merupakan WhatsApp ID, yang juga dikenal sebagai `jid` atau `lid`, dari orang maupun grup tujuan pengiriman pesan.
+- Format ID harus menggunakan `[country code][phone number]@s.whatsapp.net`
+   - Contoh untuk pengguna: `19999999999@s.whatsapp.net` and `12699999999@lid`.
+   - Untuk grup, format ID harus menggunakan `123456789-123345@g.us`.
 - For Meta AI, it's `11111111111@bot`.
 - For broadcast lists, it's `[timestamp of creation]@broadcast`.
-- For stories, the ID is `status@broadcast`.
+- Untuk story, ID yang digunakan adalah `status@broadcast`.
 
-### ✉️ Sending Messages
+### 📤 Mengirim Pesan
 
 > [!NOTE]
-> You can get the `jid` from `message.key.remoteJid` in the first example.
+> Kamu bisa mendapatkan `jid` dari `message.key.remoteJid` pada contoh pertama.
 
-#### 🔠 Text
+#### Text
 
 ```javascript
 // --- Send a regular text message
@@ -428,7 +379,7 @@ sock.sendMessage(jid, {
 })
 ```
 
-#### 🔔 Mention
+#### Mention
 
 ```javascript
 // --- Regular mention
@@ -448,7 +399,7 @@ sock.sendMessage(jid, {
 })
 ```
 
-#### 😁 Reaction
+#### Reaction
 
 ```javascript
 sock.sendMessage(jid, {
@@ -459,7 +410,7 @@ sock.sendMessage(jid, {
 })
 ```
 
-#### 📌 Pin Message
+#### Pin Message
 
 ```javascript
 sock.sendMessage(jid, {
@@ -469,10 +420,10 @@ sock.sendMessage(jid, {
 })
 ```
 
-#### 🔖 Keep Chat
+#### Keep Chat
 
 > [!NOTE]
-> Keep Chat can only be used in chats or groups with disappearing messages enabled.
+> Keep Chat hanya dapat digunakan pada chat atau grup yang mengaktifkan fitur disappearing messages.
 
 ```javascript
 sock.sendMessage(jid, {
@@ -481,7 +432,7 @@ sock.sendMessage(jid, {
 })
 ```
 
-#### ➡️ Forward Message
+#### Forward Message
 
 ```javascript
 sock.sendMessage(jid, {
@@ -490,7 +441,7 @@ sock.sendMessage(jid, {
 })
 ```
 
-#### 👤 Contact
+#### Contact
 
 ```javascript
 const vcard = 'BEGIN:VCARD\n'
@@ -512,7 +463,7 @@ sock.sendMessage(jid, {
 })
 ```
 
-#### 📍 Location
+#### Location
 
 ```javascript
 sock.sendMessage(jid, {
@@ -526,7 +477,7 @@ sock.sendMessage(jid, {
 })
 ```
 
-#### 🗓️ Event
+#### Event
 
 ```javascript
 sock.sendMessage(jid, {
@@ -550,7 +501,7 @@ sock.sendMessage(jid, {
 })
 ```
 
-#### 👥 Group Invite
+#### Group Invite
 
 ```javascript
 const inviteCode = groupUrl
@@ -573,7 +524,7 @@ sock.sendMessage(jid, {
 })
 ```
 
-#### 🛍️ Product
+#### Product
 
 ```javascript
 import { randomUUID } from 'crypto'
@@ -599,7 +550,7 @@ sock.sendMessage(jid, {
 })
 ```
 
-#### 📊 Poll
+#### Poll
 
 ```javascript
 // --- Regular poll message
@@ -661,7 +612,7 @@ sock.sendMessage(jid, {
 })
 ```
 
-#### 💭 Button Response
+#### Button Response
 
 ```javascript
 // --- Using buttonsResponseMessage
@@ -714,14 +665,45 @@ sock.sendMessage(jid, {
 })
 ```
 
-#### ✨ Rich Response
+#### Rich Response
+
+#### 🧱 AiRich Builder
+
+AiRich Builder is a helper designed to make creating **AI Rich Response** easier and more flexible. You can combine multiple message elements using a single builder without manually constructing the `richResponse` structure.
+
+**Supported Elements:**
+- Text content
+- Code block with syntax highlighting
+- Table
+- Multiple elements in a single Rich Response
+
+**Example Usage:**
+
+```javascript
+const rich = new AiRich()
+
+rich
+   .addText("Hello from HyroX!")
+   .addCode('console.log("Hello World")', "javascript")
+   .addTable([
+      ["Name", "Version"],
+      ["HyroX", "7.x"]
+   ])
+
+await sock.sendMessage(jid, {
+   richResponse: rich.build()
+})
+```
+
+AiRich Builder makes Rich Response creation simpler, cleaner, and easier to manage.
+
 
 > [!NOTE]
-> `richResponse[]` is a representation of [`submessages[]`](https://baileys.wiki/docs/api/namespaces/proto/interfaces/IAIRichResponseSubMessage) inside `richResponseMessage`.
+> `richResponse[]` merupakan representasi dari [`submessages[]`](https://baileys.wiki/docs/api/namespaces/proto/interfaces/IAIRichResponseSubMessage) di dalam `richResponseMessage`.
 
 > [!TIP]
-> You can still use the original [`submessages[]`](https://baileys.wiki/docs/api/namespaces/proto/interfaces/IAIRichResponseSubMessage) field directly.
-> The code example below is just an implementation using a helper, not a required structure.
+> Kamu juga tetap bisa menggunakan field [`submessages[]`](https://baileys.wiki/docs/api/namespaces/proto/interfaces/IAIRichResponseSubMessage) asli secara langsung.
+> Contoh kode di bawah hanya menunjukkan implementasi menggunakan helper, bukan struktur yang wajib digunakan.
 
 ```javascript
 sock.sendMessage(jid, {
@@ -757,7 +739,7 @@ sock.sendMessage(jid, {
 ```
 
 > [!TIP]
-> You can easily add syntax highlighting by importing `tokenizeCode` directly from Baileys.
+> Kamu bisa menambahkan syntax highlighting dengan mudah melalui import `tokenizeCode` langsung dari Baileys.
 
 ```javascript
 import { tokenizeCode } from 'hyrox'
@@ -778,12 +760,12 @@ sock.sendMessage(jid, {
 })
 ```
 
-> 💡 Supported Languages: `css`, `html`, `javascript`, `typescript`, `python`, `golang`, `rust`, `c`, `c#`, `c++`, `bash`, `bat`, `powershell`.
+> 💡 Bahasa yang Didukung: `css`, `html`, `javascript`, `typescript`, `python`, `golang`, `rust`, `c`, `c#`, `c++`, `bash`, `bat`, `powershell`.
 
-#### 🧾 Message with Code Block
+#### Message with Code Block
 
 > [!NOTE]
-> This feature already includes a built-in tokenizer with `tokenizeCode`.
+> Fitur ini sudah dilengkapi tokenizer bawaan melalui `tokenizeCode`.
 
 ```javascript
 sock.sendMessage(jid, {
@@ -796,7 +778,7 @@ sock.sendMessage(jid, {
 })
 ```
 
-#### 🌏 Message with Inline Entities
+#### Message with Inline Entities
 
 ```javascript
 sock.sendMessage(jid, {
@@ -820,7 +802,7 @@ sock.sendMessage(jid, {
 })
 ```
 
-#### 📋 Message with Table
+#### Message with Table
 
 ```javascript
 sock.sendMessage(jid, {
@@ -838,7 +820,7 @@ sock.sendMessage(jid, {
 })
 ```
 
-#### 🎞️ Status Mention
+#### Status Mention
 
 ```javascript
 sock.sendMessage([jidA, jidB, jidC], {
@@ -846,12 +828,12 @@ sock.sendMessage([jidA, jidB, jidC], {
 })
 ```
 
-### 📁 Sending Media Messages
+### 🖼️ Mengirim Media
 
 > [!NOTE]
-> For media messages, you can pass a `Buffer` directly, or an object with either `{ stream: Readable }` or `{ url: string }` (local file path or HTTP/HTTPS URL).
+> Untuk mengirim pesan media, kamu bisa menggunakan `Buffer` secara langsung atau object dengan `{ stream: Readable }` maupun `{ url: string }` (path file lokal atau URL HTTP/HTTPS).
 
-#### 🖼️ Image
+#### Image
 
 ```javascript
 sock.sendMessage(jid, {
@@ -864,7 +846,7 @@ sock.sendMessage(jid, {
 })
 ```
 
-#### 🎥 Video
+#### Video
 
 ```javascript
 sock.sendMessage(jid, {
@@ -879,7 +861,7 @@ sock.sendMessage(jid, {
 })
 ```
 
-#### 📃 Sticker
+#### Sticker
 
 ```javascript
 sock.sendMessage(jid, {
@@ -891,7 +873,7 @@ sock.sendMessage(jid, {
 })
 ```
 
-#### 💽 Audio
+#### Audio
 
 ```javascript
 sock.sendMessage(jid, {
@@ -904,7 +886,7 @@ sock.sendMessage(jid, {
 })
 ```
 
-#### 🗂️ Document
+#### Document
 
 ```javascript
 sock.sendMessage(jid, {
@@ -918,7 +900,7 @@ sock.sendMessage(jid, {
 })
 ```
 
-#### 🖼️ Album (Image & Video)
+#### Album (Image & Video)
 
 ```javascript
 sock.sendMessage(jid, {
@@ -948,10 +930,10 @@ sock.sendMessage(jid, {
 })
 ```
 
-#### 📦 Sticker Pack
+#### Sticker Pack
 
 > [!IMPORTANT]
-> If `sharp` or `@napi-rs/image` is not installed, the `cover` and `stickers` must already be in WebP format.
+> Jika `sharp` atau `@napi-rs/image` belum terinstal, `cover` dan `stickers` harus sudah menggunakan format WebP.
 
 ```javascript
 sock.sendMessage(jid, {
@@ -979,9 +961,9 @@ sock.sendMessage(jid, {
 })
 ```
 
-### 👉🏻 Sending Interactive Messages
+### 🎛️ Interactive Messages
 
-#### 🔘 Buttons
+#### Buttons
 
 ```javascript
 // --- Regular buttons message
@@ -1032,10 +1014,10 @@ sock.sendMessage(jid, {
 })
 ```
 
-#### 📋 List
+#### List
 
 > [!NOTE]
-> It only works in private chat (`@s.whatsapp.net`).
+> Fitur ini hanya bisa digunakan di private chat (`@s.whatsapp.net`).
 
 ```javascript
 sock.sendMessage(jid, {
@@ -1063,7 +1045,7 @@ sock.sendMessage(jid, {
 })
 ```
 
-#### 🗄️ Interactive
+#### Interactive
 
 ```javascript
 // --- Native Flow
@@ -1194,7 +1176,7 @@ sock.sendMessage(jid, {
 })
 ```
 
-#### 🫙 Hydrated Template
+#### Hydrated Template
 
 ```javascript
 sock.sendMessage(jid, {
@@ -1219,9 +1201,9 @@ sock.sendMessage(jid, {
 })
 ```
 
-### 💳 Sending Payment Messages
+### 💳 Mengirim Pesan Pembayaran
 
-#### ➕ Invite Payment
+#### Invite Payment
 
 ```javascript
 sock.sendMessage(jid, {
@@ -1229,10 +1211,10 @@ sock.sendMessage(jid, {
 })
 ```
 
-#### 🧾 Invoice
+#### Invoice
 
 > [!NOTE]
-> Invoice message are not supported yet.
+> Invoice message saat ini belum didukung.
 
 ```javascript
 sock.sendMessage(jid, {
@@ -1243,18 +1225,18 @@ sock.sendMessage(jid, {
 })
 ```
 
-#### 🛍️ Order
+#### Order
 
 ```javascript
 sock.sendMessage(chat, {
    orderText: '🛍️ Order',
-   thumbnail: fs.readFileSync('./path/to/image.jpg') // --- Must in buffer format
+   thumbnail: fs.readFileSync('./path/to/image.jpg') // --- Harus menggunakan format Buffer
 }, {
    quoted: message
 })
 ```
 
-#### 💳 Request Payment
+#### Request Payment
 
 ```javascript
 sock.sendMessage(jid, {
@@ -1263,12 +1245,12 @@ sock.sendMessage(jid, {
 })
 ```
 
-### 👁️ Other Message Options
+### 🧰 Opsi Pesan Lainnya
 
-#### 🤖 AI Icon
+#### AI Icon
 
 > [!NOTE]
-> It only works in private chat (`@s.whatsapp.net`).
+> Fitur ini hanya bisa digunakan di private chat (`@s.whatsapp.net`).
 
 ```javascript
 sock.sendMessage(jid, {
@@ -1282,10 +1264,10 @@ sock.sendMessage(jid, {
 })
 ```
 
-#### 🕒 Ephemeral
+#### Ephemeral
 
 > [!NOTE]
-> Wrap message into `ephemeralMessage`
+> Membungkus message ke dalam `ephemeralMessage`.
 
 ```javascript
 sock.sendMessage(jid, {
@@ -1300,7 +1282,7 @@ sock.sendMessage(jid, {
 #### 📰 External Ad Reply
 
 > [!NOTE]
-> Add an ad thumbnail to messages (may not be displayed on some WhatsApp versions).
+> Menambahkan thumbnail iklan ke message (tampilan bisa berbeda pada beberapa versi WhatsApp).
 
 ```javascript
 sock.sendMessage(jid, {
@@ -1308,19 +1290,19 @@ sock.sendMessage(jid, {
    externalAdReply: {
       title: '📝 Did you know?',
       body: '❓ I dont know',
-      thumbnail: fs.readFileSync('./path/to/image.jpg'), // --- Must in buffer format
-      largeThumbnail: false, // --- Or true for bigger thumbnail
-      url: 'https://www.npmjs.com/package/hyrox' // --- Optional, used for WhatsApp internal thumbnail caching and direct URL
+      thumbnail: fs.readFileSync('./path/to/image.jpg'), // --- Harus menggunakan format Buffer
+      largeThumbnail: false, // --- Gunakan true untuk thumbnail yang lebih besar
+      url: 'https://www.npmjs.com/package/hyrox' // --- Optional, digunakan untuk internal thumbnail caching WhatsApp dan direct URL
    }
 }, {
    quoted: message
 })
 ```
 
-#### 🧑‍🧑‍🧒 Group Status
+#### 👥 Group Status
 
 > [!NOTE]
-> It only works in group chat (`@g.us`)
+> Fitur ini hanya bisa digunakan di group chat (`@g.us`).
 
 ```javascript
 sock.sendMessage(jid, {
@@ -1332,10 +1314,10 @@ sock.sendMessage(jid, {
 })
 ```
 
-#### 🐱 Lottie Sticker
+#### 🎞️ Lottie Sticker
 
 > [!NOTE]
-> Wrap message into `lottieStickerMessage`
+> Membungkus message ke dalam `lottieStickerMessage`.
 
 ```javascript
 sock.sendMessage(jid, {
@@ -1346,12 +1328,12 @@ sock.sendMessage(jid, {
 })
 ```
 
-#### 🧩 Raw
+#### 🧩 Raw Message
 
 ```javascript
 sock.sendMessage(jid, {
    extendedTextMessage: {
-      text: '📃 Built manually from scratch using the raw WhatsApp proto structure',
+      text: '📃 Dibuat secara manual menggunakan raw WhatsApp proto structure',
       contextInfo: {
          externalAdReply: {
             title: 'hyrox',
@@ -1377,10 +1359,10 @@ sock.sendMessage(jid, {
 })
 ```
 
-#### 📑 Spoiler
+#### ❔ Spoiler
 
 > [!NOTE]
-> Wrap message into `spoilerMessage`
+> Membungkus message ke dalam `spoilerMessage`.
 
 ```javascript
 sock.sendMessage(jid, {
@@ -1395,7 +1377,7 @@ sock.sendMessage(jid, {
 #### 👁️ View Once
 
 > [!NOTE]
-> Wrap message into `viewOnceMessage`
+> Membungkus message ke dalam `viewOnceMessage`.
 
 ```javascript
 sock.sendMessage(jid, {
@@ -1410,7 +1392,7 @@ sock.sendMessage(jid, {
 #### 👁️ View Once V2
 
 > [!NOTE]
-> Wrap message into `viewOnceMessageV2`
+> Membungkus message ke dalam `viewOnceMessageV2`.
 
 ```javascript
 sock.sendMessage(jid, {
@@ -1425,7 +1407,7 @@ sock.sendMessage(jid, {
 #### 👁️ View Once V2 Extension
 
 > [!NOTE]
-> Wrap message into `viewOnceMessageV2Extension`
+> Membungkus message ke dalam `viewOnceMessageV2Extension`.
 
 ```javascript
 sock.sendMessage(jid, {
@@ -1437,9 +1419,9 @@ sock.sendMessage(jid, {
 })
 ```
 
-### ♻️ Modify Messages
+### 🔄 Mengelola Pesan
 
-#### 🗑️ Delete Messages
+#### 🗑️ Menghapus Pesan
 
 ```javascript
 sock.sendMessage(jid, {
@@ -1447,28 +1429,28 @@ sock.sendMessage(jid, {
 })
 ```
 
-#### ✏️ Edit Messages
+#### ✏️ Mengedit Pesan
 
 ```javascript
-// --- Edit plain text
+// --- Edit plain text message
 sock.sendMessage(jid, {
    text: '✨ I mean, nice!',
    edit: message.key
 })
 
-// --- Edit media messages caption
+// --- Edit caption pada media message
 sock.sendMessage(jid, {
    caption: '✨ I mean, here is the image!',
    edit: message.key
 })
 ```
 
-### 🧰 Additional Contents
+### 🧩 Fitur Tambahan
 
-#### 🏷️ Find User ID (JID|PN/LID)
+#### 🔎 Find User ID (JID|PN/LID)
 
 > [!NOTE]
-> The ID must contain numbers only (no +, (), or -) and must include the country code with WhatsApp ID format.
+> ID hanya boleh berisi angka (tanpa +, (), atau -) dan harus menyertakan kode negara sesuai format WhatsApp ID.
 
 ```javascript
 // --- PN (Phone Number)
@@ -1490,18 +1472,18 @@ console.log('🏷️ Got user ID', ':', ids)
 //    phoneNumber: '6281111111111@s.whatsapp.net',
 //    lid: '43411111111111@lid'
 // }
-// --- Output when failed
+// --- Output jika proses gagal
 // {
 //    phoneNumber: '6281111111111@s.whatsapp.net',
 //    lid: undefined
 // }
-// --- Same output shape regardless of input type
+// --- Format output tetap sama untuk semua tipe input
 ```
 
-#### 🔑 Request Custom Pairing Code
+#### 🔐 Request Custom Pairing Code
 
 > [!NOTE]
-> The phone number must contain numbers only (no +, (), or -) and must include the country code.
+> Nomor telepon hanya boleh berisi angka (tanpa +, (), atau -) dan harus menyertakan kode negara.
 
 ```javascript
 const phoneNumber = '6281111111111'
@@ -1539,7 +1521,7 @@ if (lib.sharp?.default) {
 
 // --- If @napi-rs/image installed
 else if (lib.image?.Transformer) {
-   // --- Must in buffer format
+   // --- Harus menggunakan format Buffer
    const inputBuffer = Buffer.isBuffer(bufferOrFilePath)
       ? bufferOrFilePath
       : await readFile(bufferOrFilePath)
@@ -1571,247 +1553,247 @@ console.dir(output, { depth: null })
 #### 📣 Newsletter Management
 
 ```javascript
-// --- Create a new one
+// --- Membuat yang baru
 sock.newsletterCreate('hyrox', '📣 Fresh updates weekly')
 
-// --- Get info
+// --- Mengambil informasi
 const metadata = sock.newsletterMetadata('1231111111111@newsletter')
 console.dir(metadata, { depth: null })
 
-// --- Get subscribers count
+// --- Mengambil jumlah subscribers
 const subscribers = await sock.newsletterSubscribers('1231111111111@newsletter')
 console.dir(subscribers, { depth: null })
 
-// --- Follow and Unfollow
+// --- Follow dan unfollow newsletter
 sock.newsletterFollow('1231111111111@newsletter')
 sock.newsletterUnfollow('1231111111111@newsletter')
 
-// --- Mute and Unmute
+// --- Mute dan unmute newsletter
 sock.newsletterMute('1231111111111@newsletter')
 sock.newsletterUnmute('1231111111111@newsletter')
 
-// --- Demote admin
+// --- Menurunkan role admin
 sock.newsletterDemote('1231111111111@newsletter', '6281111111111@s.whatsapp.net')
 
-// --- Change owner
+// --- Mengubah owner
 sock.newsletterChangeOwner('1231111111111@newsletter', '6281111111111@s.whatsapp.net')
 
-// --- Update newsletter
+// --- Memperbarui newsletter
 sock.newsletterUpdate('1231111111111@newsletter', { name: 'hyrox' })
 
-// --- Change name
+// --- Mengubah nama
 sock.newsletterUpdateName('1231111111111@newsletter', '📦 hyrox')
 
-// --- Change description
+// --- Mengubah deskripsi
 sock.newsletterUpdateDescription('1231111111111@newsletter', '📣 Fresh updates weekly')
 
-// --- Change photo
+// --- Mengubah foto
 sock.newsletterUpdatePicture('1231111111111@newsletter', {
    url: 'path/to/image.jpg'
 })
 
-// --- Remove photo
+// --- Menghapus foto
 sock.newsletterRemovePicture('1231111111111@newsletter')
 
-// --- React to a message
+// --- Memberikan reaction pada message
 sock.newsletterReactMessage('1231111111111@newsletter', '100', '💛')
 
-// --- Get admin count
+// --- Mengambil jumlah admin
 const count = await sock.newsletterAdminCount('1231111111111@newsletter')
 
-// --- Get all subscribed newsletters
+// --- Mengambil semua newsletter yang diikuti
 const newsletters = await sock.newsletterSubscribed()
 console.dir(newsletters, { depth: null })
 
-// --- Fetch newsletter messages
+// --- Mengambil pesan newsletter
 const messages = sock.newsletterFetchMessages('jid', '1231111111111@newsletter', 50, 0, 0)
 console.dir(messages, { depth: null })
 
-// --- Delete newsletter
+// --- Menghapus newsletter
 sock.newsletterDelete('1231111111111@newsletter')
 ```
 
 #### 👥 Group Management
 
 ```javascript
-// --- Create a new one and add participants using their JIDs
+// --- Membuat group baru dan menambahkan participants menggunakan JID
 const group = sock.groupCreate('hyrox', ['628123456789@s.whatsapp.net'])
 console.dir(group, { depth: null })
 
-// --- Get info
+// --- Mengambil informasi
 const metadata = await sock.groupMetadata(jid)
 console.dir(metadata, { depth: null })
 
-// --- Get group invite code
+// --- Mengambil kode undangan group
 const inviteCode = await sock.groupInviteCode(jid)
 console.dir(inviteCode, { depth: null })
 
 
-// --- Revoke invite link
+// --- Membatalkan invite link
 sock.groupRevokeInvite(jid)
 
-// --- Accept group invite
+// --- Menerima undangan group
 sock.groupAcceptInvite(inviteCode)
 
-// --- Leave group
+// --- Keluar dari group
 sock.groupLeave(jid)
 
-// --- Add participants
+// --- Menambahkan participants
 sock.groupParticipantsUpdate(jid, ['628123456789@s.whatsapp.net'], 'add')
 
-// --- Remove participants
+// --- Menghapus participants
 sock.groupParticipantsUpdate(jid, ['628123456789@s.whatsapp.net'], 'remove')
 
-// --- Promote to admin
+// --- Mengangkat participant menjadi admin
 sock.groupParticipantsUpdate(jid, ['628123456789@s.whatsapp.net'], 'promote')
 
-// --- Demote from admin
+// --- Menurunkan role admin participant
 sock.groupParticipantsUpdate(jid, ['628123456789@s.whatsapp.net'], 'demote')
 
-// --- Accept join requests
+// --- Menerima join request
 sock.groupRequestParticipantsUpdate(jid, ['628123456789@s.whatsapp.net'], 'approve')
 
-// --- Change name
+// --- Mengubah nama
 sock.groupUpdateSubject(jid, '📦 hyrox')
 
-// --- Change description
+// --- Mengubah deskripsi
 sock.groupUpdateDescription(jid, 'Updated description')
 
-// --- Change photo
+// --- Mengubah foto
 sock.updateProfilePicture(jid, {
    url: 'path/to/image.jpg'
 })
 
-// --- Remove photo
+// --- Menghapus foto
 sock.removeProfilePicture(jid)
 
-// --- Set group as admin only for chatting
+// --- Mengatur agar hanya admin yang bisa mengirim pesan
 sock.groupSettingUpdate(jid, 'announcement')
 
-// --- Set group as open to all for chatting
+// --- Mengizinkan semua participant mengirim pesan
 sock.groupSettingUpdate(jid, 'not_announcement')
 
-// --- Set admin only can edit group info
+// --- Hanya admin yang bisa mengubah info group
 sock.groupSettingUpdate(jid, 'locked')
 
-// --- Set all participants can edit group info
+// --- Semua participant bisa mengubah info group
 sock.groupSettingUpdate(jid, 'unlocked')
 
-// --- Set admin only can add participants
+// --- Hanya admin yang bisa menambahkan participants
 sock.groupMemberAddMode(jid, 'admin_add')
 
-// --- Set all participants can add participants
+// --- Semua participants bisa menambahkan anggota
 sock.groupMemberAddMode(jid, 'all_member_add')
 
-// --- Enable or disable temporary messages with seconds format
+// --- Mengaktifkan atau menonaktifkan temporary messages menggunakan satuan detik
 sock.groupToggleEphemeral(jid, 86400)
 
-// --- Disable temporary messages
+// --- Menonaktifkan temporary messages
 sock.groupToggleEphemeral(jid, 0)
 
-// --- Enable or disable membership approval mode
+// --- Mengaktifkan atau menonaktifkan membership approval
 sock.groupJoinApprovalMode(jid, 'on')
 sock.groupJoinApprovalMode(jid, 'off')
 
-// --- Get all groups metadata
+// --- Mengambil metadata semua group
 const groups = await sock.groupFetchAllParticipating()
 console.dir(groups, { depth: null })
 
-// --- Get pending join requests
+// --- Mengambil daftar join request yang menunggu
 const requests = await sock.groupRequestParticipantsList(jid)
 console.dir(requests, { depth: null })
 
-// --- Get group info from link
+// --- Mengambil informasi group dari invite link
 const group = await sock.groupGetInviteInfo('ABC123456789')
 console.log('👥 Got group info from invite code', ':', group)
 
-// --- Update bot member label
+// --- Memperbarui label member bot
 sock.updateMemberLabel(jid, 'hyrox')
 ```
 
-#### 👥 Community Management
+#### 🌐 Community Management
 
 ```javascript
-// --- Create a new one and add description
+// --- Membuat community baru sekaligus menambahkan deskripsi
 const community = await sock.communityCreate('hyrox', '📣 Fresh updates weekly')
 console.dir(community, { depth: null })
 
-// --- Create a subgroup for community and add participants using their JIDs
+// --- Membuat subgroup dan menambahkan participants menggunakan JID
 const group = await sock.communityCreateGroup('📢 Announcements', ['628123456789@s.whatsapp.net'], communityJid)
 
-// --- Link an existing group
+// --- Menghubungkan group yang sudah ada
 sock.communityLinkGroup(groupJid, communityJid)
 
-// --- Unlink an existing group
+// --- Memutuskan hubungan group dari community
 sock.communityUnlinkGroup(groupJid, communityJid)
 
-// --- Get info
+// --- Mengambil informasi
 const metadata = await sock.communityMetadata(jid)
 console.dir(metadata, { depth: null })
 
-// --- Get community invite code
+// --- Mengambil kode undangan community
 const inviteCode = await sock.communityInviteCode(jid)
 console.dir(inviteCode, { depth: null })
 
-// --- Revoke invite link
+// --- Membatalkan invite link
 sock.communityRevokeInvite(jid)
 
-// --- Accept community invite
+// --- Menerima undangan community
 sock.communityAcceptInvite(inviteCode)
 
-// --- Leave community
+// --- Keluar dari community
 sock.communityLeave(jid)
 
-// --- Accept join requests
+// --- Menerima join request
 sock.communityRequestParticipantsUpdate(jid, ['628123456789@s.whatsapp.net'], 'approve')
 
-// --- Change name
+// --- Mengubah nama
 sock.communityUpdateSubject(jid, '📦 hyrox')
 
-// --- Change description
+// --- Mengubah deskripsi
 sock.communityUpdateDescription(jid, 'Updated description')
 
-// --- Set community as admin only for chatting
+// --- Mengatur agar hanya admin yang bisa mengirim pesan
 sock.communitySettingUpdate(jid, 'announcement')
 
-// --- Set community as open to all for chatting
+// --- Mengizinkan semua participant mengirim pesan
 sock.communitySettingUpdate(jid, 'not_announcement')
 
-// --- Set admin only can edit community info
+// --- Hanya admin yang bisa mengubah info community
 sock.communitySettingUpdate(jid, 'locked')
 
-// --- Set all participants can edit community info
+// --- Semua participant bisa mengubah info community
 sock.communitySettingUpdate(jid, 'unlocked')
 
-// --- Set admin only can add participants
+// --- Hanya admin yang bisa menambahkan participants
 sock.communityMemberAddMode(jid, 'admin_add')
 
-// --- Set all participants can add participants
+// --- Semua participants bisa menambahkan anggota
 sock.communityMemberAddMode(jid, 'all_member_add')
 
-// --- Enable or disable temporary messages with seconds format
+// --- Mengaktifkan atau menonaktifkan temporary messages menggunakan satuan detik
 sock.communityToggleEphemeral(jid, 86400)
 
-// --- Disable temporary messages
+// --- Menonaktifkan temporary messages
 sock.communityToggleEphemeral(jid, 0)
 
-// --- Enable or disable membership approval mode
+// --- Mengaktifkan atau menonaktifkan membership approval
 sock.communityJoinApprovalMode(jid, 'on')
 sock.communityJoinApprovalMode(jid, 'off')
 
-// --- Get all communities metadata
+// --- Mengambil metadata semua community
 const communities = await sock.communityFetchAllParticipating()
 console.dir(communities, { depth: null })
 
-// --- Get all community linked groups
+// --- Mengambil semua group yang terhubung ke community
 const linked = await sock.communityFetchLinkedGroups(jid)
 console.dir(linked, { depth: null })
 
-// --- Get pending join requests
+// --- Mengambil daftar join request yang menunggu
 const requests = await sock.communityRequestParticipantsList(jid)
 console.dir(requests, { depth: null })
 
-// --- Get community info from link
+// --- Mengambil informasi community dari invite link
 const community = await sock.communityGetInviteInfo('ABC123456789')
 console.log('👥 Got community info from invite code', ':', community)
 ```
@@ -1819,72 +1801,72 @@ console.log('👥 Got community info from invite code', ':', community)
 #### 👤 Profile Management
 
 ```javascript
-// --- Get user profile picture
+// --- Mengambil foto profil user
 const url = await sock.profilePictureUrl(jid, 'image')
 console.log('🖼️ Got user profile url', url)
 
-// --- Update profile picture
+// --- Memperbarui foto profil
 sock.updateProfilePicture(jid, buffer)
 sock.updateProfilePicture(jid, { url })
 
-// --- Remove profile picture
+// --- Menghapus foto profil
 sock.removeProfilePicture(jid)
 
-// --- Update profile name
+// --- Memperbarui nama profil
 sock.updateProfileName('My Name')
 
-// --- Update profile status
+// --- Memperbarui status profil
 sock.updateProfileStatus('Available')
 
-// --- Presence
+// --- Mengatur presence
 sock.sendPresenceUpdate('available', jid)
 sock.presenceSubscribe(jid)
 
-// --- Read receipts
+// --- Mengelola read receipts
 sock.readMessages([message.key])
 sock.sendReceipt(jid, participant, [messageId], 'read')
 
-// --- Block user
+// --- Memblokir user
 sock.updateBlockStatus(jid, 'block')
 
-// --- Unblock user
+// --- Membuka blokir user
 sock.updateBlockStatus(jid, 'unblock')
 
-// --- Fetch blocklist
+// --- Mengambil daftar blokir
 const blocked = await sock.fetchBlocklist()
 console.dir(blocked, { depth: null })
 
-// --- Modify chats
+// --- Mengubah pengaturan chat
 sock.chatModify({
    archive: true,
    lastMessageOrig: message,
    lastMessage: message
 }, jid)
 
-// --- Star messages
+// --- Memberikan atau menghapus star pada message
 sock.star(jid, [{ id: messageId, fromMe: true }], true)
 
-// --- Contact
+// --- Mengelola contact
 sock.addOrEditContact(jid, { displayName: 'Starseed' })
 sock.removeContact(jid)
 
-// --- Label
+// --- Mengelola label
 sock.addChatLabel(jid, labelId)
 sock.removeChatLabel(jid, labelId)
 sock.addMessageLabel(jid, messageId, labelId)
 
-// --- App state sync
+// --- Sinkronisasi app state
 sock.resyncAppState(['regular', 'critical_block'], true)
 
-// --- Get business profile
+// --- Mengambil business profile
 const profile = await sock.getBusinessProfile(jid)
 console.dir(profile, { depth: null })
 ```
 
-#### 🛒 Business Management
+#### 🏪 Business Management
 
 ```javascript
-// --- Create a new product
+// --- Membuat product baru
 const product = await sock.productCreate({
    name: '🧩 Starseed (Premium)',
    description: 'Get a full version of Starseed!',
@@ -1900,7 +1882,7 @@ const product = await sock.productCreate({
 })
 console.dir(product, { depth: null })
 
-// --- Update product
+// --- Memperbarui product
 await sock.productUpdate(productId, {
    name: '🧩 Starseed (Premium)',
    description: 'Get a full version of Starseed with more features!',
@@ -1913,24 +1895,24 @@ await sock.productUpdate(productId, {
    ]
 })
 
-// --- Delete product
+// --- Menghapus product
 sock.productDelete([productId])
 
-// --- Get catalog info
+// --- Mengambil informasi catalog
 const { products, nextPageCursor } = await sock.getCatalog({
   jid: '628123456789@s.whatsapp.net',
   limit: 10
 })
 
-// --- Get collections
+// --- Mengambil daftar collections
 const collections = await sock.getCollections('628123456789@s.whatsapp.net', 10)
 console.dir(collections, { depth: null })
 
-// --- Get order info
+// --- Mengambil informasi order
 const order = await sock.getOrderDetails(orderId, tokenBase64)
 console.dir(order, { depth: null })
 
-// --- Update business profile
+// --- Memperbarui business profile
 await sock.updateBusinessProfile({
    address: 'Jakarta, Indonesia',
    description: '🛒 Official Starseed Store',
@@ -1942,63 +1924,63 @@ await sock.updateBusinessProfile({
    }
 })
 
-// --- Update cover
+// --- Memperbarui cover photo
 sock.updateCoverPhoto({
    url: './path/to/image.jpg'
 })
 
-// --- Remove cover
+// --- Menghapus cover photo
 sock.removeCoverPhoto(coverId)
 
-// --- Update quick replies
+// --- Menambahkan atau memperbarui quick replies
 sock.addOrEditQuickReply({
   shortcut: 'hello',
   message: 'Hello from business account',
 })
 
-// --- Remove quick reply
+// --- Menghapus quick reply
 sock.removeQuickReply(timestamp)
 ```
 
-#### 🔐 Privacy Management
+#### 🔒 Privacy Management
 
 ```javascript
-// --- Update last seen privacy
+// --- Mengatur privasi last seen
 sock.updateLastSeenPrivacy('all')
 sock.updateLastSeenPrivacy('contacts')
 sock.updateLastSeenPrivacy('contact_blacklist')
 sock.updateLastSeenPrivacy('nobody')
 
-// --- Update online privacy
+// --- Mengatur privasi status online
 sock.updateOnlinePrivacy('all')
 sock.updateOnlinePrivacy('match_last_seen')
 
-// --- Update profile picture privacy
+// --- Memperbarui foto profil privacy
 sock.updateProfilePicturePrivacy('contacts')
 
-// --- Update status privacy
+// --- Mengatur privasi status
 sock.updateStatusPrivacy('contacts')
 
-// --- Update read receipts privacy
+// --- Mengatur privasi read receipts
 sock.updateReadReceiptsPrivacy('all')
 sock.updateReadReceiptsPrivacy('none')
 
-// --- Update groups add privacy
+// --- Mengatur privasi undangan group
 sock.updateGroupsAddPrivacy('all')
 sock.updateGroupsAddPrivacy('contacts')
 
-// --- Update messages privacy
+// --- Mengatur privasi messages
 sock.updateMessagesPrivacy('all')
 sock.updateMessagesPrivacy('contacts')
 sock.updateMessagesPrivacy('nobody')
 
-// --- Update call privacy
+// --- Mengatur privasi panggilan
 sock.updateCallPrivacy('everyone')
 
-// --- Update default disappearing mode
+// --- Mengatur default disappearing mode
 sock.updateDefaultDisappearingMode(86400)
 
-// --- Update link previews privacy
+// --- Mengatur privasi link previews
 sock.updateDisableLinkPreviewsPrivacy(true)
 ```
 
@@ -2040,32 +2022,25 @@ sock.ev.on('newsletter-settings.update', (update) => {})
 sock.ev.on('settings.update', (update) => {})
 ```
 
-### 🚀 Try the Bot
+### 🤖 Explore Bot
 
-A Simple WhatsApp Bot Built with Zapo.
+HyroX bisa dijadikan fondasi untuk membangun dan mengembangkan WhatsApp bot sesuai kebutuhan project.
 
-👉🏻 [@itsliaaa/starseed](https://github.com/itsliaaa/starseed#readme)
+### 🌿 Project Foundation
 
-A toolkit for building WhatsApp bots with Zapo.
+HyroX menggunakan [Baileys (GitHub)](https://github.com/WhiskeySockets/Baileys) sebagai basis pengembangannya.
 
-👉🏻 [@itsliaaa/starforge](https://www.npmjs.com/package/@itsliaaa/starforge)
+### 🏅 Kredit dan Atribusi
 
-### 📦 Fork Base
+Untuk kebutuhan protokol, HyroX menggunakan Protocol Buffer definitions yang dikelola oleh [WPP Connect](https://github.com/wppconnect-team) melalui [`wa-proto`](https://github.com/wppconnect-team/wa-proto).
 
-This fork is based on [Baileys (GitHub)](https://github.com/WhiskeySockets/Baileys)
+Apresiasi dan credit tetap diberikan kepada original maintainers serta contributors Baileys:
 
-### 📣 Credits
-
-This fork uses Protocol Buffer definitions maintained by [WPP Connect](https://github.com/wppconnect-team) via [`wa-proto`](https://github.com/wppconnect-team/wa-proto)
-
-Full credit is attributed to the original maintainers and contributors of Baileys:
 - [purpshell](https://github.com/purpshell)
 - [jlucaso1](https://github.com/jlucaso1)
 - [adiwajshing](https://github.com/adiwajshing)
 
 <!-- Please do not replace my name with yours. It's disrespectful. -->
 
-This fork includes additional enhancements and modifications by [Lia Wynn](https://github.com/itsliaaa)
-
 > [!CAUTION]
-> ⚠️ **Modification, removal, or misrepresentation of these credits is strictly prohibited. Any redistribution or fork must preserve this section in its original form without exception.**
+> ⚠️ **Jangan menghapus, mengganti, atau menyalahgunakan atribusi credit pada bagian ini. Setiap redistribution maupun fork wajib tetap menyertakan credit tersebut secara lengkap.**
