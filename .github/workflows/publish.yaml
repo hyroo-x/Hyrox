@@ -1,13 +1,12 @@
-name: Publish Package
+name: Publish HyroX
 
 on:
   push:
     tags:
-      - '*'
+      - 'v*'
 
 permissions:
   contents: read
-  packages: write
   id-token: write
 
 jobs:
@@ -21,24 +20,11 @@ jobs:
         with:
           node-version: 24
           registry-url: https://registry.npmjs.org
-          scope: '@itsliaaa'
 
       - run: corepack enable
-      - run: yarn install --no-immutable
+      - run: yarn install --immutable
 
-      - name: Publish to npm
-        run: npm publish --access public --provenance --tag latest
+      - name: Publish HyroX to npm
+        run: npm publish --provenance --tag latest
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
-
-      - name: Setup GitHub Packages
-        uses: actions/setup-node@v6
-        with:
-          node-version: 24
-          registry-url: https://npm.pkg.github.com
-          scope: '@itsliaaa'
-
-      - name: Publish to GitHub Packages
-        run: npm publish --tag latest
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}

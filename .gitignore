@@ -1,0 +1,7 @@
+node_modules/
+.yarn/install-state.gz
+*.bak
+.env
+.env.*
+!.env.example
+npm-debug.log*
